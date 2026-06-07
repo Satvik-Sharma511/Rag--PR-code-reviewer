@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import PromptTemplate
-from chromadb import HttpClient
+import chromadb
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -19,7 +19,7 @@ load_dotenv()
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 # Setup Chroma Client connecting to our docker container
-chroma_client = HttpClient(host='localhost', port=8000)
+chroma_client = chromadb.PersistentClient(path="./chroma_db")
 vectorstore = Chroma(
     client=chroma_client,
     collection_name="pr_reviews",
