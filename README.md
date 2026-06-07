@@ -1,7 +1,7 @@
 # 🤖 RAG-Powered AI Code Reviewer 
 
 An intelligent, full-stack application that acts as an automated, expert code reviewer for your GitHub Pull Requests. It reads your code diffs, cross-references them against your team's historical review patterns and guidelines using **Retrieval-Augmented Generation (RAG)**, and provides actionable, line-by-line feedback.
- (https://satvik-spidy-rag.hf.space/api/v1/webhooks/github) can add this to your repo webhook
+
 ---
 
 ## 🎯 The Motive
