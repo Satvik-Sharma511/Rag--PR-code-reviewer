@@ -12,6 +12,7 @@ langchain
 langchain-community
 langchain-google-genai
 sentence-transformers
-chromadb-client
+chromadb
 pytest
 httpx
+langchain-groq
