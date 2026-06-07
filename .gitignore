@@ -1,0 +1,29 @@
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / Environment
+.env
+.env.*
+*.pem
+*.key
+*.cert
+*.cert.pem
+secret.json
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+
+# Build
+dist/
+build/
