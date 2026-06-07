@@ -3,8 +3,9 @@ import axios from 'axios';
 import PRViewer from './components/PRViewer';
 import './App.css';
 
-// Pointing to the live Hugging Face Space backend
-const API_BASE_URL = "https://satvik-spidy-rag.hf.space/api/v1";
+// Pull the API URL from environment variables (Professional standard)
+// Fallback to localhost if the variable isn't set
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8001/api/v1";
 
 /* ─── small reusable pieces ─── */
 
