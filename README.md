@@ -1,4 +1,4 @@
-# 🤖 RAG-Powered AI Code Reviewer
+# 🤖 RAG-Powered AI Code Reviewer 
 
 *🚀 **Quick Start**: You can immediately use this AI on your own GitHub repositories by adding `https://satvik-spidy-rag.hf.space/api/v1/webhooks/github` to your repo's Webhooks!*
 
